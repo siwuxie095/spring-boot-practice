@@ -37,10 +37,10 @@ public class Main {
      *
      * 安装 Spring Boot CLI 最直接的方法大约是下载、解压，随后将它的 bin 目录添加到系统路径里。你可以从以下两个地址
      * 下载分发包：
-     * （1）https://repo.spring.io/release/org/springframework/boot/spring-boot-cli/1.3.0.RELEASE/
-     * spring-boot-cli-1.3.0.RELEASE-bin.zip
-     * （2）https://repo.spring.io/release/org/springframework/boot/spring-boot-cli/1.3.0.RELEASE/
-     * spring-boot-cli-1.3.0.RELEASE-bin.tar.gz
+     * （1）https://repo.spring.io/release/org/springframework/boot/spring-boot-cli/1.4.3.RELEASE/
+     * spring-boot-cli-1.4.3.RELEASE-bin.zip
+     * （2）https://repo.spring.io/release/org/springframework/boot/spring-boot-cli/1.4.3.RELEASE/
+     * spring-boot-cli-1.4.3.RELEASE-bin.tar.gz
      *
      * 下载完成之后，把它解压到文件系统的任意目录里。在解压后的目录里，你会找到一个 bin 目录，其中包含了一个 spring.bat
      * 脚本（用于 Windows 环境）和一个 spring 脚本（用于 Unix 环境）。把这个 bin 目录添加到系统路径里，然后就能使用
@@ -85,18 +85,18 @@ public class Main {
      * sdk list springboot
      *
      * list 命令列出了所有可用版本，包括已经安装的和正在使用的。从中选择一个进行安装，然后就可以正常使用。举例来说，要安
-     * 装 Spring Boot CLI 1.3.0.RELEASE，直接使用 install 命令，指定版本号：
+     * 装 Spring Boot CLI 1.4.3.RELEASE，直接使用 install 命令，指定版本号：
      *
-     * sdk install springboot 1.3.0.RELEASE
+     * sdk install springboot 1.4.3.RELEASE
      *
      * 这样就会安装一个新版本，随后你会被询问是否将其设置为默认版本。要是你不想把它作为默认版本，或者想要切换到另一个版本，
      * 可以用 use 命令：
      *
-     * sdk use springboot 1.3.0.RELEASE
+     * sdk use springboot 1.4.3.RELEASE
      *
      * 如果你希望把那个版本作为所有 shell 的默认版本，可以使用 default 命令：
      *
-     * sdk default springboot 1.3.0.RELEASE
+     * sdk default springboot 1.4.3.RELEASE
      *
      * 使用 SDKMAN 来管理 Spring Boot CLI 有一个好处，你可以便捷地在 Spring Boot 的不同版本之间切换。这样你可以在
      * 正式发布前试用快照版本（snapshot）、里程碑版本（milestone）和尚未正式发布的候选版本（release candidate），
