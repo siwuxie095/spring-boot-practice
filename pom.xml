@@ -10,6 +10,7 @@
     <version>1.0.0</version>
     <modules>
         <module>chapter2nd-demo1st</module>
+        <module>chapter3rd-demo1st</module>
     </modules>
 
     <properties>
@@ -67,6 +68,11 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
         </dependency>
     </dependencies>
 
