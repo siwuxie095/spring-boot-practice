@@ -80,7 +80,7 @@ public class MockMvcWebTests {
                 .andExpect(model().attributeExists("books"))
                 .andExpect(model().attribute("books", hasSize(1)))
                 .andExpect(model().attribute("books",
-                        Matchers.contains(samePropertyValuesAs(expectedBook))));
+                        contains(samePropertyValuesAs(expectedBook))));
     }
 
 }
