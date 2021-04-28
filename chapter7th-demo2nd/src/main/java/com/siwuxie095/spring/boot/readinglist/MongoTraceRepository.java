@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.actuate.trace.Trace;
 import org.springframework.boot.actuate.trace.TraceRepository;
 import org.springframework.data.mongodb.core.MongoOperations;
+import org.springframework.stereotype.Service;
 
 import java.util.Date;
 import java.util.List;
@@ -14,7 +15,7 @@ import java.util.Map;
  * @date 2021-04-22 23:18:20
  */
 @SuppressWarnings("all")
-//@Service
+@Service
 public class MongoTraceRepository implements TraceRepository {
 
     private MongoOperations mongoOps;
