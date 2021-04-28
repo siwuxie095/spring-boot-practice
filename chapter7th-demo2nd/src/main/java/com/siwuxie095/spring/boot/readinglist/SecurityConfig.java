@@ -26,6 +26,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .authorizeRequests()
                 .antMatchers("/").access("hasRole('READER')")
                 .antMatchers("/mgmt/**").access("hasRole('ADMIN')")
+                //.antMatchers("/shutdown").access("hasRole('ADMIN')")
                 .antMatchers("/**").permitAll()
                 .and()
                 .formLogin()
@@ -51,6 +52,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .and()
                 .inMemoryAuthentication()
                 .withUser("manager").password("s3cr3t").roles("ADMIN");
+                //.withUser("manager").password("s3cr3t").roles("ADMIN", "READER");
     }
 
 }
